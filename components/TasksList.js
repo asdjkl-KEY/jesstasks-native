@@ -56,7 +56,7 @@ const TasksList = ({ navigation }) => {
       <FlatList
         data={tasks}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={(item) => item.numberId.toString()}
         refreshControl={
           <RefreshControl
             refreshing={refreshing}
